@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Job Analysis - AI Gap Analyzer</title>
+
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">AI Gap Analyzer</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="career.html">Career Analysis</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Main Section -->
+    <main class="analysis-page">
+
+        <div class="analysis-container">
+
+            <p class="tagline">JOB DESCRIPTION ANALYSIS</p>
+
+            <h1>Compare Your Skills With a Job</h1>
+
+            <p class="section-text">
+                Upload your resume and paste the job description
+                to discover how well your skills match the job.
+            </p>
+
+
+            <form id="jobForm">
+
+                <!-- Resume Upload -->
+                <div class="form-group">
+
+                    <label for="resume">
+                        Upload Your Resume
+                    </label>
+
+                    <input
+                        type="file"
+                        id="resume"
+                        name="resume"
+                        accept=".pdf"
+                        required
+                    >
+
+                    <small>Please upload your resume in PDF format.</small>
+
+                </div>
+
+
+                <!-- Job Description -->
+                <div class="form-group">
+
+                    <label for="jobDescription">
+                        Paste Job Description
+                    </label>
+
+                    <textarea
+                        id="jobDescription"
+                        name="jobDescription"
+                        rows="8"
+                        placeholder="Paste the complete job description here..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <!-- Buttons -->
+                <button type="submit" class="primary-button">
+                    Analyze My Skills
+                </button>
+
+                <button type="reset" class="reset-button">
+                    Clear Form
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 AI Gap Analyzer | Mini Project</p>
+    </footer>
+
+
+    <script src="static/js/script.js"></script>
+
+</body>
+</html>

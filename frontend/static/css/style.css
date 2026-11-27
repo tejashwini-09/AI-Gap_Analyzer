@@ -1,0 +1,309 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f8fc;
+    color: #252542;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: white;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #635bdb;
+}
+
+nav a {
+    text-decoration: none;
+    color: #444;
+    margin-left: 25px;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #eeeeff, #e4f1ff);
+}
+
+.tagline {
+    color: #635bdb;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 46px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #666;
+    line-height: 1.7;
+}
+
+.primary-button,
+.feature-card button {
+    display: inline-block;
+    background: #635bdb;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.features {
+    text-align: center;
+    padding: 70px 8%;
+}
+
+.features h2,
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.section-text {
+    color: #777;
+    margin-bottom: 35px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.feature-card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.card-icon {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+.feature-card h3 {
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.about {
+    text-align: center;
+    padding: 55px 20px;
+    background: #eeeeff;
+}
+
+.about p {
+    max-width: 650px;
+    margin: 15px auto 0;
+    line-height: 1.7;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 22px;
+    background: #252542;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+}
+
+
+/* Career Analysis Page */
+
+.analysis-page {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background: #f7f8fc;
+}
+
+.analysis-container {
+    background: white;
+    width: 100%;
+    max-width: 650px;
+    padding: 45px;
+    border-radius: 18px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+}
+
+.analysis-container h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-top: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.form-group small {
+    display: block;
+    color: #777;
+    margin-top: 8px;
+}
+
+.analysis-container button {
+    margin-top: 30px;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .analysis-container {
+        padding: 25px;
+    }
+
+    .analysis-container h1 {
+        font-size: 25px;
+    }
+}
+
+
+/* Job Analysis Page */
+
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.form-group textarea:focus,
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #635bdb;
+}
+
+.reset-button {
+    margin-top: 12px;
+    width: 100%;
+    padding: 13px;
+    background: white;
+    color: #635bdb;
+    border: 1px solid #635bdb;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.reset-button:hover {
+    background: #eeeeff;
+}
+
+
+/* Results Dashboard */
+
+body:has(main section) {
+    background: #f7f8fc;
+}
+
+header {
+    text-align: center;
+    padding: 35px 20px;
+    background: #252542;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+main {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+main section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+main section h2 {
+    color: #635bdb;
+    margin-bottom: 15px;
+}
+
+main section h3 {
+    font-size: 35px;
+    color: #16a36a;
+    margin: 15px 0;
+}
+
+main section p {
+    color: #666;
+    line-height: 1.7;
+}
+
+main > a {
+    display: inline-block;
+    margin-top: 15px;
+}

@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Analysis - AI Gap Analyzer</title>
+
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="logo">AI Gap Analyzer</div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#features">Features</a>
+        </nav>
+    </header>
+
+    <main class="analysis-page">
+
+        <div class="analysis-container">
+
+            <p class="tagline">CAREER SKILL ANALYSIS</p>
+
+            <h1>Find Your Career Skill Gaps</h1>
+
+            <p class="section-text">
+                Upload your resume and select your dream career
+                to discover which skills you need to improve.
+            </p>
+
+            <form id="careerForm">
+
+                <div class="form-group">
+                    <label for="resume">Upload Your Resume</label>
+
+                    <input
+                        type="file"
+                        id="resume"
+                        name="resume"
+                        accept=".pdf"
+                        required
+                    >
+
+                    <small>Upload your resume in PDF format.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="career">Select Your Desired Career</label>
+
+                    <select id="career" name="career" required>
+                        <option value="">Choose a career</option>
+                        <option value="Data Analyst">Data Analyst</option>
+                        <option value="Web Developer">Web Developer</option>
+                        <option value="Python Developer">Python Developer</option>
+                        <option value="AI Engineer">AI Engineer</option>
+                        <option value="Software Developer">Software Developer</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="primary-button">
+                    Analyze My Skills
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <script src="static/js/script.js"></script>
+
+</body>
+</html>
