@@ -35,3 +35,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const careerForm = document.getElementById("careerForm");
+
+    if (careerForm) {
+        careerForm.addEventListener("submit", function (event) {
+
+            event.preventDefault();
+
+            const resume = document.getElementById("resume").files[0];
+            const career = document.getElementById("career").value;
+
+            if (!resume || !career) {
+                alert("Please upload your resume and select a career.");
+                return;
+            }
+
+            alert(
+                "Your information is received!\n\n" +
+                "Resume: " + resume.name +
+                "\nDesired career: " + career +
+                "\n\nAI analysis will be connected soon."
+            );
+
+        });
+    }
+
+});
